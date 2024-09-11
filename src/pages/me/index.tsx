@@ -1,4 +1,5 @@
 import { Spinner } from '@/components/atoms/Spinner';
+import { AccountManagementTab } from '@/components/organisms/AccountPage/AccountManagementTab';
 import { PasswordTab } from '@/components/organisms/AccountPage/PasswordTab';
 import { PersonalInfoTab } from '@/components/organisms/AccountPage/PersonalInfoTab';
 import { ProfileTab } from '@/components/organisms/AccountPage/ProfileTab';
@@ -69,6 +70,7 @@ export default function MePage() {
               <AsideNavItem value="profile">Perfil</AsideNavItem>
               <AsideNavItem value="schedule">Agenda</AsideNavItem>
               <AsideNavItem value="password">Senha</AsideNavItem>
+              <AsideNavItem value="account-management">Gestão da conta</AsideNavItem>
             </AsideNavContainer>
           </AsideContainer>
 
@@ -85,6 +87,7 @@ export default function MePage() {
                 <ProfileTab />
                 <ScheduleTab />
                 <PasswordTab />
+                <AccountManagementTab />
               </>
             )}
 

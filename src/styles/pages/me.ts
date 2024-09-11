@@ -4,7 +4,7 @@ import * as Tabs from '@radix-ui/react-tabs';
 export const Container = styled.div`
   display: flex;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1.5rem;
 
   // antes com 100vh estava criando scroll na pagina
   // pois está somando conteúdo com espaço do header
@@ -49,6 +49,7 @@ export const AsideNavContainer = styled(Tabs.List)`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  flex-grow: 1;
 `;
 
 export const AsideNavItem = styled(Tabs.Trigger)`
@@ -71,6 +72,12 @@ export const AsideNavItem = styled(Tabs.Trigger)`
   &:hover {
     background-color: ${props => props.theme.colors.gray[200]};
   }
+
+  &:last-child {
+    margin-top: auto;
+    padding-left: 0.5rem;
+    }
+
 `;
 
 export const ContainerSpinnerLoading = styled.div`
