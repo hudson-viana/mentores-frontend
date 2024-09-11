@@ -6,7 +6,14 @@ export const Container = styled.div`
   gap: 1rem;
   padding: 1rem;
 
-  min-height: 100vh;
+  // antes com 100vh estava criando scroll na pagina
+  // pois está somando conteúdo com espaço do header
+  // então precisa subtrair tamanho do header
+  // mas header não tem tamanho fixo
+  // por isso um numero menor que 100vh foi aplicado
+  // trocado vh por dvh para em celulares desconsiderar
+  // espaço da barra de endereços 
+  min-height: 92dvh;  
 
   main {
     flex: 1;
